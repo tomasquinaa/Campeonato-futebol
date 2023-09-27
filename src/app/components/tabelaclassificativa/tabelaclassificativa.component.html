@@ -1,0 +1,43 @@
+<div class="container-flui">
+    <div class="mb-3">
+        <!-- <h4>Home</h4> -->
+    </div>
+
+    <!-- Table Element -->
+    <div class="card border-0">
+        <div class="card-header">
+            <h2 class="card-title">
+                Classificação
+            </h2>
+        </div>
+    </div>
+    <!-- Table Element -->
+    <div class="card border-0">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Escudo</th>
+                        <th>Time</th>
+                        <th>Pontos</th>
+                        <th>Jogos</th>
+                        <th>Vitorias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let time of tabela | async">
+                        <td>{{ time.posicao}}</td>
+                        <td><img escudo="escudo" src="{{time.time.escudo}}"
+                                width="50px"
+                                height="30px"></td>
+                        <td>{{time.time.nome_popular}}</td>
+                        <td>{{time.pontos}}</td>
+                        <td>{{time.jogos}}</td>
+                        <td>{{time.vitorias}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

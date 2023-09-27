@@ -1,0 +1,26 @@
+.escudo{
+    max-width: 40px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* linhas pares (even) 
+.tabela tbody tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+*/
+
+/* linhas ímpares (odd) 
+.tabela tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+*/

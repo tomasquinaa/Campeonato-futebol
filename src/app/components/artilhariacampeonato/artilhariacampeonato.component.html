@@ -1,0 +1,42 @@
+<div class="container-flui">
+    <div class="mb-3">
+        <!-- <h4>Home</h4> -->
+    </div>
+
+    <!-- Table Element -->
+    <div class="card border-0">
+        <div class="card-header">
+            <h2 class="card-title">
+                Marcadores do Campeonato
+            </h2>
+
+        </div>
+    </div>
+    <!-- Table Element -->
+    <div class="card border-0">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Equipa</th>
+                        <th>Jogador</th>
+                        <th>Golos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let time of artilharia | async">
+                        <td>
+                            <img escudo="escudo" src="{{time.time.escudo}}"
+                                width="50px"
+                                height="30px">
+                        </td>
+                        <td>{{ time.time.nome_popular}}</td>
+                        <td>{{ time.atleta.nome_popular}}</td>
+                        <td>{{ time.gols}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

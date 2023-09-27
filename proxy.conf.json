@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://api.api-futebol.com.br",
+      "secure": false,
+      "changeOrigin": true
+    }
+}
